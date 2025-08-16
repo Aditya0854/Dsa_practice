@@ -1,3 +1,5 @@
+package graph;
+
 import java.util.*;
 
 public class dfsTraversal {
@@ -6,7 +8,6 @@ public class dfsTraversal {
         //marking current node as visited
         vis[node] = true;
         ls.add(node);
-
         //getting meighbors of current node
         for(Integer it: adj.get(node)) {
             if(vis[it] == false) {
